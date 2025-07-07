@@ -50,12 +50,6 @@ COIN-TRADE-website/
 🔧 How to Run Locally
 Clone this repo:
 
-bash
-Copy
-Edit
-git clone https://github.com/your-username/COIN-TRADE-website.git
-Open index.html in your browser.
-
 Enjoy the demo!
 
 📸 Screenshots
