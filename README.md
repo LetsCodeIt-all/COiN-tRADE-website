@@ -27,7 +27,7 @@ CoinGecko API (for live crypto data)
 Chart.js (for graphs)
 
 GitHub Pages (for deployment)
-
+https://letscodeit-all.github.io/COiN-tRADE-website/
 📁 Folder Structure
 
 COIN-TRADE-website/
