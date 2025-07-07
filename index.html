@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/Navbar.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+    </style>
+  </head>
+  <body>
+    <div class="NavBar"></div>
+    <div class="mainContent">
+      <div class="Intro">
+        <h1>
+          Namaste, Trader!<br />
+          Meet COiN tRADE 🇮🇳
+        </h1>
+        <p>
+          COiN tRADE is the world's safest and most trusted platform to buy,
+          sell and manage crypto.
+        </p>
+      </div>
+      <div class="searchIntro">
+        <div class="explore">
+          <h1>Explore,</h1>
+          All Crypto Currency here on COiN tRADE
+        </div>
+        <div class="search">
+          <label for="searchInput">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </label>
+          <input
+            type="search"
+            id="searchInput"
+            name="search"
+            placeholder="Search for assets"
+            aria-label="Search for assets"
+            autocomplete="off"
+          />
+          <ul id="suggestions"></ul>
+        </div>
+      </div>
+      <div class="prices">
+        <h1>Coin Prices</h1>
+        <div class="scrollCoin">
+          <ul class="CoinHead">
+            <li>Assets<!--image & symbol--></li>
+            <li>Name</li>
+            <li>Price</li>
+            <li>Up/Down</li>
+            <li>Action</li>
+          </ul>
+          <ul class="coinBoxes"></ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="chartDiv"><canvas id="myChart"></canvas></div>
+
+    <div class="footer"></div>
+
+    <script src="js/nav&foo.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script
+      src="https://kit.fontawesome.com/dc72d70774.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

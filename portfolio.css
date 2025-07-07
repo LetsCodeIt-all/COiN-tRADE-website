@@ -1,0 +1,76 @@
+.PortfolioTable {
+  
+  padding: 20px;
+  
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Roboto Slab", serif;
+  color: #0052ff;
+  width: 100%;
+}
+.PortfolioTable .Table{
+  
+  overflow: auto;
+  width: 100%;
+}
+.PortfolioTable table {
+  width: 100%;
+  border-collapse: separate; /* 👈 VERY important */
+  margin-top: 20px;
+  border-bottom: 0.1px solid rgb(212, 211, 211);
+
+  border-left: none;
+  overflow-x: auto;
+}
+.PortfolioTable table td{
+  border-bottom: 0.1px solid rgb(212, 211, 211);
+  text-align: center;
+  width: 15%;
+  
+  padding: 10px;
+  color: black;
+  cursor: pointer;
+}
+.PortfolioTable table th {
+  background-color: #0052ff;
+  color: #fff;
+ width: 15%;
+
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.chartCoin {
+  
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  line-height: 40px;
+  overflow: hidden;
+}
+.chartCoin ul {
+  font-size: 30px;
+  font-weight: bold;
+  list-style: none;
+}
+.chart .CoinChart {
+  padding: 20px;
+}
+.showSell{
+box-sizing: border-box;
+  width: auto;
+  
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  
+padding: 10px;
+border-radius: 10px;
+margin: 5px;
+  border: none;
+  background-color: #0052ff;
+  
+  
+}

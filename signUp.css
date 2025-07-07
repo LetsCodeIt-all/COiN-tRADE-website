@@ -1,0 +1,112 @@
+body {
+  height: 100vh;
+  width: 100vw;
+}
+.signUp {
+  
+
+  width: fit-content;
+  padding: 20px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  background-color: white;
+  box-shadow: 5px 5px 10px 10px rgb(224, 221, 221);
+  border-radius: 20px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  margin: 10px;
+}
+.Container{
+    height: auto;
+    
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.signUp input{
+    margin: 10px;
+    width: 300px; 
+    padding: 15px;
+    border-radius: 10px;
+background-color: transparent;
+    outline: none;
+    border: 2px solid black;
+    
+}
+.signUp button{
+    width: fit-content;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #0052ff;
+    color:white;
+    font-weight: bold;
+    letter-spacing: 1px;
+ 
+    cursor: pointer;
+}
+.heading{
+  margin: 10px;
+  color:#0052ff;
+  font-family: "Roboto Slab";
+  text-align: center;
+  font-size: 24px;
+}
+.signUp span{
+  color: #0052ff;
+  cursor: pointer;
+}
+.signUp div{
+  position: relative;
+  
+}
+.signUp label{
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.3s ease;
+
+}
+/* div:not(:last-of-type) input:focus + label {
+  background-color: white;
+  top: 12%;
+  padding: 5px;
+  color: #0052ff;
+} */
+div input:focus + label,
+div input:not(:placeholder-shown) + label {
+ background-color: white;
+  top: 12%;
+  padding: 5px;
+  color: #0052ff;
+}
+.passwordBox i{
+  position: absolute;
+  top: 40%;
+  right: 10%;
+  transform: translateY(-50%);
+  cursor: pointer;
+
+}
+.passwordBox label{
+  top: 40%;
+}
+#password.strong {
+  border-color: green;
+}
+
+/* Red outline for weak password */
+#password.weak {
+  border-color: red;
+}
+.passwordBox p{
+  font-size: 10px;
+  opacity: 0.6;
+}

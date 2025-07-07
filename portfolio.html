@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/Navbar.css" />
+    <link rel="stylesheet" href="css/portfolio.css" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+    </style>
+  </head>
+  <body>
+    <div class="NavBar"></div>
+    <div class="PortfolioTable">
+      <div class="Table">
+        <h1>Portfolio</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Quantity</th>
+              <th>Coin</th>
+              <th>Buy_Price</th>
+              <th>Current_Price</th>
+
+              <th>P/L</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="chartCoin">
+        <ul>
+          <img class="chartSymbol" src="" width="30px" />
+          <li class="chartName">Name</li>
+          <li class="chartPrice">Current_Price</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="CoinChart">
+      <canvas id="myChart"></canvas>
+    </div>
+
+    <div class="footer"></div>
+    <script src="js/nav&foo.js"></script>
+    <script src="js/portfolio.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script
+      src="https://kit.fontawesome.com/dc72d70774.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

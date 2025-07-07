@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/signUp.css" />
+    <link rel="stylesheet" href="css/Navbar.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+    </style>
+  </head>
+  <body>
+    <div class="NavBar"></div>
+    <form id="registerForm" method="post">
+      <div class="Container">
+        <h1 class="heading">
+          Get Start With India's best CryptoTrading Website
+        </h1>
+
+        <div class="signUp">
+          <div>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder=" "
+              autocomplete="off"
+              required
+            />
+            <label for="name">Name</label>
+          </div>
+          <div>
+            <input
+              type="tel"
+              id="mobile"
+              name="mobile"
+              pattern="[0-9]{2}-[0-9]{10}"
+              placeholder=" "
+              autocomplete="off"
+              required
+            />
+            <label for="mobile">Mobile</label>
+          </div>
+          <div>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder=" "
+              autocomplete="off"
+              required
+            />
+            <label for="email">Email</label>
+          </div>
+          <div class="passwordBox">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder=""
+              autocomplete="off"
+              required
+            />
+            <label for="password">Password</label>
+            <i class="fa-regular fa-eye-slash Eyecon"></i>
+            <p>* Must Contains 1 Capital,1 LowerCase,1 SpecialSymbols</p>
+          </div>
+
+          <button type="submit" class="login">Register</button>
+          <h3 class="AnotherText">Already Registerd?</h3>
+          <span>Login</span>
+        </div>
+      </div>
+    </form>
+
+    <div class="footer"></div>
+    <script src="js/nav&foo.js"></script>
+    <script
+      src="https://kit.fontawesome.com/dc72d70774.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/login.js"></script>
+  </body>
+</html>

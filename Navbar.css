@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100vh;
+}
+/* For Chrome, Safari, Edge */
+body::-webkit-scrollbar {
+  width: 10px;
+  height: 4px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #0551f3;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #000307;
+}
+
+body::-webkit-scrollbar-button {
+  background-color: black;
+}
+
+.NavBar {
+  width: 100%;
+  height: 15vh;
+  background-color: #fff;
+  display: flex;
+  border-bottom: 0.2px solid #d8d5d5;
+  transition: all 0.3s ease-in-out;
+  z-index: 999;
+}
+
+/* Add visual effect on scroll */
+.sticky {
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fefefe;
+  transform: translateY(0);
+}
+
+.NavBarName {
+  width: 30%;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  font-family: "Ubuntu", sans-serif;
+  font-size: auto;
+  font-weight: 400;
+  color: #0052ff;
+  cursor: pointer;
+}
+.NavbarBtn i {
+  display: none;
+  font-size: 30px;
+  color: #0052ff;
+  cursor: pointer;
+}
+
+.NavBarContent {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.NavBarlinks {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+
+.NavBarlinks a {
+  color: #000;
+  text-decoration: none;
+  margin: 5px;
+  padding: 20px;
+  font-weight: bold;
+  position: relative;
+}
+
+.NavBarlinks a::after {
+  content: "";
+  position: absolute;
+  background-color: #0052ff;
+  height: 3px;
+  border-radius: 5px;
+  width: 0%;
+  right: 15px;
+  bottom: -5px;
+  transition: width 0.2s ease-in;
+}
+
+.NavBarlinks a:hover::after {
+  width: 80%;
+}
+
+.NavbarBtn {
+  width: auto;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.NavbarBtn button {
+  background-color: #014cec;
+  padding: 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  margin: 5px;
+}
+.NavbarBtn button a,
+.NavbarBtn button {
+  font-weight: 900;
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+}
+.NavBar i {
+  margin: 5px;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  font-size: 30px;
+  color: #014cec;
+}
+
+.CoinValue button,
+.NavbarBtn button:hover {
+  box-shadow: 20px 20px 10px 10px rgba(0, 0, 0, 0.137) inset;
+}
+.Menu {
+  position: absolute;
+  top: 0;
+  right: 10px; /* fully hidden */
+  padding: 20px;
+  background-color: white;
+  display: none;
+  flex-direction: column;
+  border: 0.2px dashed rgb(212, 211, 211);
+  width: fit-content; /* fixed width needed for sliding */
+  height: fit-content;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.Menu a {
+  padding: 20px;
+  width: 100%;
+  color: #0052ff;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+
+  border-bottom: 0.2px solid black;
+}
+.footer {
+  margin-top: 20px;
+  background-color: #0052ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+  color: white;
+}
+
+.leftFooter {
+  width: 50%;
+  font-size: 30px;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+}
+
+.rightFooter {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.rightFooter ul {
+  list-style: none;
+  font-weight: bolder;
+  font-size: 30px;
+  line-height: 40px;
+}
+.NavBarlinks a.active,
+.Menu a.active {
+  color: rgb(241, 151, 166);
+}
+
+@media (max-width: 1054px) {
+  .NavBarName {
+    font-size: 12px;
+  }
+  .NavBarlinks {
+    display: none;
+  }
+  .NavbarBtn i {
+    display: block;
+  }
+  .NavbarBtn button {
+    display: none;
+  }
+  .leftFooter,
+  .rightFooter li {
+    font-size: 16px;
+  }
+  .PortfolioTable {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 670px) {
+  .scrollCoin {
+    overflow-x: auto;
+  }
+
+  .CoinHead,
+  .CoinValue {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 615px;
+    font-size: 14px;
+  }
+
+  .CoinHead li,
+  .CoinValue li {
+    text-align: center;
+    padding: 10px 5px;
+  }
+
+  .CoinValue button {
+    width: 100%;
+  }
+}
